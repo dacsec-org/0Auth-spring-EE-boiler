@@ -10,6 +10,9 @@ import javax.persistence.PersistenceContext;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * {@link EmployeeRepository} implementation.
+ */
 @Repository
 public class EmployeeRepository {
     

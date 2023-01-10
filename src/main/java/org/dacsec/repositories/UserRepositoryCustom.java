@@ -1,10 +1,13 @@
 package org.dacsec.repositories;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.Set;
+import org.springframework.security.core.userdetails.User;
+
+import java.util.*;
 import java.util.function.Predicate;
 
+/**
+ * {@link UserRepositoryCustom} custom methods.
+ */
 public interface UserRepositoryCustom {
     List<User> findUserByEmails(Set<String> emails);
     

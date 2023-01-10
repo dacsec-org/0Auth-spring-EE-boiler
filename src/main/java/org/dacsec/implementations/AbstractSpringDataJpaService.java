@@ -7,6 +7,11 @@ import org.springframework.transaction.annotation.Transactional;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * {@link AbstractSpringDataJpaService} provides a base implementation of
+ * {@link IOperations} to reduce the amount of code that must be written.
+ * @param <T> the type of entity
+ */
 @Transactional(value = "transactionManager")
 public abstract class AbstractSpringDataJpaService<T extends Serializable> implements IOperations<T> {
     

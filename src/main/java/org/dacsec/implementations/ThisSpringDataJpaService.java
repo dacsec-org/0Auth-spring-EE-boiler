@@ -9,6 +9,9 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.io.Serializable;
 
+/**
+ * {@link ThisService} implementation.
+ */
 public class ThisSpringDataJpaService extends AbstractSpringDataJpaService<Logger> implements ThisService {
     
     @Autowired

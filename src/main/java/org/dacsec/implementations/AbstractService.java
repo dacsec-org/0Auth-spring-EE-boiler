@@ -10,6 +10,11 @@ import org.springframework.transaction.annotation.Transactional;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * {@link AbstractService} provides a base implementation of {@link IOperations}
+ * to reduce the amount of code that must be written.
+ * @param <T> a generic type variable
+ */
 @Transactional
 public abstract class AbstractService<T extends Serializable> implements IOperations<T> {
     // read - one

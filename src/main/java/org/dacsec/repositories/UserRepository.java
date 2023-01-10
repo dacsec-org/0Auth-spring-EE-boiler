@@ -1,8 +1,9 @@
 package org.dacsec.repositories;
 
-import org.springframework.data.jpa.repository.Modifying;
-import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.domain.*;
+import org.springframework.data.jpa.repository.*;
 import org.springframework.data.repository.query.Param;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;
@@ -10,8 +11,11 @@ import java.util.Collection;
 import java.util.List;
 import java.util.stream.Stream;
 
+/**
+ * {@link UserRepository} is a Spring Data JPA repository for {@link User} entities.
+ */
 @Repository
-public interface UserRepository extends JpaRepository<User, Integer> , UserRepositoryCustom{
+public interface UserRepository extends JpaRepository<User, Integer>, UserRepositoryCustom{
     
     Stream<User> findAllByName(String name);
     

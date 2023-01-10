@@ -6,6 +6,9 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * {@link UserPage} is a domain class that represents a user page.
+ */
 @Entity
 @Table(name = "users")
 public class UserPage {

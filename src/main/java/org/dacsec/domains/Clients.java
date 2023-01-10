@@ -10,6 +10,10 @@ import java.io.Serializable;
 import java.util.Collection;
 import java.util.Iterator;
 
+/**
+ * {@link Clients} is a domain class that represents a client.
+ * @param <E> the type of the client's {@link Collection} of ...
+ */
 @NamedNativeQueries({@NamedNativeQuery(
   name = "callGetAllClients",
   query = "CALL GetAllClients()",

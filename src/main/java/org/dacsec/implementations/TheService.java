@@ -13,6 +13,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+/**
+ * {@link TheService} implementation.
+ */
 @Service
 @Transactional
 public class TheService extends AbstractService<Clients> implements ThatService {
@@ -40,6 +43,7 @@ public class TheService extends AbstractService<Clients> implements ThatService 
     @Transactional(readOnly = true)
     public List<Clients> findAll() {
         return Lists.newArrayList(getDao().findAll());
+        //FIXME:
     }
     
     @Override

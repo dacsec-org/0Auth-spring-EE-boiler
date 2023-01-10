@@ -4,6 +4,9 @@ import jakarta.persistence.*;
 import org.hibernate.annotations.Table;
 import org.springframework.data.annotation.Id;
 
+/**
+ * {@link Possession} is a domain class that represents a possession of a.....
+ */
 @Entity
 @Table(appliesTo = "possessions")
 public class Possession {

@@ -5,6 +5,11 @@ import jakarta.persistence.*;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * {@link Employee} entity class for setting up tables in the database with the
+ * employee phone number as the primary key, and the employee id as a unique
+ * identifier.
+ */
 @Entity
 public class Employee {
     @Id

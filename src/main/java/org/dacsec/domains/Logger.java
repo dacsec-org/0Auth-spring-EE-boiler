@@ -11,6 +11,9 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.Set;
 
+/**
+ * {@link Logger} is the entity class for the logger table.
+ */
 @Entity
 @NamedQuery(name = "Logger.findAll", query = "SELECT b FROM Logger b")
 @EntityListeners(AuditingEntityListener.class)

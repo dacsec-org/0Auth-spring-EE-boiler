@@ -3,6 +3,10 @@ package org.dacsec.entities;
 import jakarta.persistence.Embeddable;
 import java.util.Objects;
 
+/**
+ * {@link Phone} is an embeddable class that is used to store phone numbers for
+ * {@link Employee} objects.
+ */
 @Embeddable
 public class Phone {
     private String type;

@@ -9,6 +9,10 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+/**
+ * {@link PersistenceConfiguration} is a Spring {@link Configuration} class that
+ * provides the necessary beans to configure the persistence layer.
+ */
 @Configuration
 @Profile("!tc")
 @EnableTransactionManagement

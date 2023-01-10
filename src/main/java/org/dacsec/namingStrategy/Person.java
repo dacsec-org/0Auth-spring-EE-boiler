@@ -3,6 +3,9 @@ package org.dacsec.namingStrategy;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+/**
+ * {@link Person} is a simple entity class.
+ */
 @Entity
 public class Person {
     @Id
